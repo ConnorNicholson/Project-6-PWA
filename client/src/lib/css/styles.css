@@ -1,0 +1,576 @@
+
+html,body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen 
+    and (min-device-width: 1281px)
+    and (max-device-width: 3000px) {
+        .navbar {
+            font-size: 20px;
+        }
+        .index-intro {
+            font-size: 70px;
+        }
+        .header-info {
+            font-size: 32px;
+        }
+        .index-main {
+            margin: auto;
+            padding: 30px;
+            background-color: black;
+            background: black;
+            border-bottom: 1px solid #d21313;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+        .index-main {
+            margin: auto;
+            padding: 30px;
+            background-color: black;
+            background: black;
+            border-bottom: 1px solid #d21313;
+            width: 100vw;
+            height: 120vh;
+            text-align: center;
+        }
+        .slider-header {
+            color: #fff;
+            margin-top: 30px;
+            padding-bottom: 50px;
+            font-size: 50px;
+        }
+        .product-intro {
+            font-size: 70px;
+            text-align: center;
+            margin: 150px 0 75px 0;
+        }
+        .product-info {
+            font-size: 32px;
+        }
+        .product-showcase {
+            font-size: 70px;
+        }
+        .filter-label {
+            width:23%;
+        }
+        .contact-intro {
+            font-size: 70px;
+        }
+    }
+@media only screen 
+    and (min-device-width: 950px) 
+    and (max-device-width: 1280px)  {
+        .navbar {
+            font-size: 20px;
+        }
+        .index-intro {
+            font-size: 70px;
+        }
+        .header-info {
+            font-size: 32px;
+        }
+        .img-container {
+            margin: auto;
+            height: 350px;
+        }
+        .index-main {
+            margin: auto;
+            padding: 30px;
+            background-color: black;
+            background: black;
+            border-bottom: 1px solid #d21313;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+        .slider-header {
+            color: #fff;
+            margin-top: 30px;
+            padding-bottom: 50px;
+            font-size: 50px;
+        }
+        .product-intro {
+            font-size: 70px;
+            text-align: center;
+            margin: 150px 0 75px 0;
+        }
+        .product-info {
+            font-size: 32px;
+        }
+        .product-showcase {
+            font-size: 70px;
+        }
+        .filter-label {
+            width:23%;
+        }
+        .contact-intro {
+            font-size: 70px;
+        }
+}
+@media only screen 
+    and (min-device-width: 768px)
+    and (max-device-width: 949px) {
+        .navbar {
+            font-size: 20px;
+        }
+        .index-intro {
+            font-size: 50px;
+        }
+        .siteName {
+            font-size: 50px;
+        }
+        .header-info {
+            font-size: 25px;
+        }
+        .img-container {
+            margin: auto;
+            height: 300px;
+        }
+        .index-main {
+            margin: auto;
+            padding: 30px;
+            background-color: black;
+            background: black;
+            border-bottom: 1px solid #d21313;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+        .slider-header {
+            color: #fff;
+            margin-top: 30px;
+            padding-bottom: 50px;
+            font-size: 50px;
+        }
+        .product-intro {
+            font-size: 70px;
+            text-align: center;
+            margin: 150px 0 75px 0;
+        }
+        .product-info {
+            font-size: 32px;
+        }
+        .product-showcase {
+            font-size: 70px;
+        }
+        .filter-label {
+            width:23%;
+        }
+        .contact-intro {
+            font-size: 70px;
+        }
+    }
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 767px) {
+        .navbar {
+            font-size: 20px;
+        }
+        .index-intro {
+            font-size: 50px;
+        }
+        .siteName {
+            font-size: 50px;
+        }
+        .header-info {
+            font-size: 18px;
+        }
+        .img-container {
+            margin: auto;
+            width: 0;
+            height: 0;
+        }
+        .index-main {
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .slider-header {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+        .contact-intro {
+            font-size: 40px;
+            margin: 35px;
+            margin-bottom: 0;
+        }
+        .product-intro {
+            font-size: 50px;
+            text-align: center;
+            margin: 150px 0 75px 0;
+        }
+        .product-info {
+            font-size: 25px;
+        }
+        .product-showcase {
+            font-size: 40px;
+        }
+        .filter-label {
+            width:35%;
+        }
+        .contact-form {
+            margin-bottom: 30px;
+        }
+        .navbar {
+            font-size: 15px;
+        }
+    }
+
+
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: rgba(21, 31, 33, 0.5);
+    border-bottom: 1px solid #d21313;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar a {
+    color: #d21313;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+}
+
+.navbar .navbar-nav .active-link {
+    color: #fff;
+}
+
+button:focus {
+    outline: 0
+}
+
+/* INDEX HEADER */
+
+.index-header {
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564068320/Assets%20ECommerce/stars_xvjxgc.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+}
+
+.siteName {
+    color: #d21313;
+}
+
+.index-intro {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.header-info {
+    text-align: center;
+    background-color: rgba(21, 31, 33, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #d21313;
+    margin-bottom: 140px;
+}
+
+
+
+
+/* INDEX SLIDER */
+
+.legend {
+    height: 10px;
+}
+
+.thumb {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel {
+    text-align: center;
+}
+
+.control-dots {
+    background: rgba(21, 31, 33, 0.5);
+    margin: 0;
+    height: 20px;
+}
+
+.slider-container {
+    margin: auto;
+    width: 35vw;
+}
+
+.carousel-img {
+    height: 500px;
+    width: 500px;
+}
+
+.slider-wrapper {
+    border: 1px solid #d21313;
+    border-radius: 10px;
+}
+
+/* PRODUCT HEADER */
+
+.product-info {
+    text-align: center;
+    background-color: rgba(21, 31, 33, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #d21313;
+    margin-bottom: 239px;
+}
+
+.quote-author {
+    color: #d21313;
+}
+
+
+
+/* PRODUCT */
+
+.product-main {
+    background-size: cover;
+    background-color: black;
+    border-bottom: 1px solid #d21313;
+    padding-top: 30px;
+}
+
+.products-header {
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1570048364/Assets%20ECommerce/stars_background_qfwmkm.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+}
+
+.product-content {
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.product-showcase {
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 10px;
+}
+
+.product-display {
+    margin: 20px;
+}
+
+.product-name {
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.product-description {
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-price {
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #d21313;
+    border-radius: 10px;
+    width: 200px;
+}
+
+
+
+/* PRODUCT FILTER */
+
+input[type="radio"] {
+    display:none;
+}
+
+.filter-label {
+    float:left;
+    text-align:center;
+    background: black;
+    color:#fff;
+    padding:0.5%;
+    margin:0.5%;
+    margin-bottom:30px;
+    cursor:pointer;
+    border: 1px solid #d21313;
+    border-radius: 10px
+}
+
+ input[type="radio"][id="telescopes"]:checked + .filter-label {
+    background: #d21313;
+} 
+
+input[type="radio"][id="sextants"]:checked + .filter-label {
+    background: #d21313;
+}
+
+input[type="radio"][id="belowThousand"]:checked + .filter-label {
+    background: #d21313;
+}
+
+
+
+
+/* CONTACT */
+
+.contact-header {
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564335069/Assets%20ECommerce/contact_page_background_ehtap2.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+    padding-top: 30px;
+}
+
+.contact-intro {
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+/* CONTACT FORM */
+
+.form-elements {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d21313;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(21, 31, 33, 0.5);
+    color: #fff;
+}
+
+label {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d21313;
+    border-radius: 10px;
+    outline: none;
+    background: #d21313;
+    color: #fff;
+}
+
+.form-elements::placeholder {
+    color: #fff;
+}
+
+.contact-submit:hover {
+    background-color: #d21313;
+}
+
+.contact-submit:active {
+    outline: none;
+}
+
+.contact-submit:not(:active) {
+    outline: none;
+}
+
+.errMsg {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* COMMENTS SECTION */
+
+.comments-main {
+    background-size: cover;
+    background-color: black;
+    border-bottom: 1px solid #d21313;
+    padding-top: 30px;
+}
+
+.comments-container {
+    background-color: #000;
+    text-align: center;
+    padding: 100px;
+}
+
+.comments-header {
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.comments-display {
+    color: #fff;
+    padding: 20px 0 20px;
+    border-bottom: solid #ccbdbd81 1px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+footer a {
+    color: #d21313;
+}
+
+footer a:hover {
+    color: #25339c;
+    text-decoration: none;
+}

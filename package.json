@@ -1,0 +1,45 @@
+{
+  "name": "phase-6-pwa",
+  "version": "1.0.0",
+  "description": "This repo is for my eCommerce Website - Phase 6",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "eslint-utils": ">=1.4.2",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "helmet": "^3.21.1",
+    "http-proxy-middleware": "^0.20.0",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.11",
+    "react-router": "^5.1.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConnorNicholson/Project-6-PWA/issues"
+  },
+  "homepage": "https://github.com/ConnorNicholson/Project-6-PWA#readme"
+}
