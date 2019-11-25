@@ -1,9 +1,6 @@
-# eCommerce Project Phase 5
-This repo is for Phase 3 of my eCommerce Website, AstroTech.
+# eCommerce Project Phase 6
+This repo is for Phase 6 of my eCommerce Website, AstroTech.
 AstroTech is dedicated to carrying top of the line astronomical equipment.
-
-## Link to Heroku:
-https://reactjs-proj5-authentication.herokuapp.com/
 
 ## Currently in this repo:
 1. This README.md
