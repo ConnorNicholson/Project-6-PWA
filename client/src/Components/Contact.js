@@ -12,23 +12,23 @@ class Contact extends React.Component {
         };
     };
 
-    fetchContacts = () => {
-      fetch('http://localhost:5000/api/contacts')
-      .then(res => {
-        return res.json()
-      })
-      .then(data => {
-        this.setState({
-        contacts: data
-      })})
-      .catch(function(error) {
-        console.log(error)
-      });
-    };
+    // fetchContacts = () => {
+    //   fetch('http://localhost:5000/api/contacts')
+    //   .then(res => {
+    //     return res.json()
+    //   })
+    //   .then(data => {
+    //     this.setState({
+    //     contacts: data
+    //   })})
+    //   .catch(function(error) {
+    //     console.log(error)
+    //   });
+    // };
 
-    componentDidMount() {
-      this.fetchContacts()
-    };
+    // componentDidMount() {
+    //   this.fetchContacts()
+    // };
 
     render() {
 

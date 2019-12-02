@@ -2,9 +2,10 @@ import axios from 'axios'
 import jwtDecode from 'jwt-decode'
 
 // Instantiate axios
-const httpClient = axios.create()
+// For Heroku:
 // const httpClient = axios.create()
-
+// For Local:
+const httpClient = axios.create({baseURL:"http://localhost:3001"})
 
 httpClient.getToken = function() {
     return localStorage.getItem('token')

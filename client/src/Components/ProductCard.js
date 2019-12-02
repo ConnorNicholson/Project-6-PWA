@@ -13,7 +13,7 @@ function ProductCard(props) {
                 <div key={index}>
                     <div className="product-display">
                         <h2 className="card product-name">{product.product_name}</h2>
-                        <img className="card product-img" src={product.img_url}/>
+                        <img className="card product-img" src={product.img_url} alt={product.product_description}/>
                         <div className="card product-description">
                             <p>{product.product_description}</p>
                             <p>Price: ${product.price}</p>

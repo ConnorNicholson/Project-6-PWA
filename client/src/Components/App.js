@@ -1,6 +1,5 @@
 import React from 'react';
 import '../lib/css/styles.css';
-import { Switch, Route, Redirect } from 'react-router-dom'
 
 import httpClient from '../httpClient';
 
@@ -8,11 +7,6 @@ import httpClient from '../httpClient';
 // import Products from './Products';
 // import Contact from './Contact';
 import NavBar from './NavBar';
-import LogIn from './LogIn';
-import LogOut from './LogOut';
-import SignUp from './SignUp';
-import Home from './Home';
-import Products from './Products';
 
 const PORT = process.env.PORT || 3001
 
@@ -20,7 +14,10 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
+      // Temporary fix for Heroku:
+      // fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
+      // Temporary fix for local:
+      fetchEndpoint: 'http://localhost:3001/api/products',
       allProducts: [],
       everything: true,
       telescopes: false,
@@ -66,7 +63,10 @@ class App extends React.Component {
 
   viewEverything = () => {
     this.setState({
-        fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
+        // Temporary fix for Heroku:
+        // fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
+        // Temporary fix for local:
+        fetchEndpoint: 'http://localhost:3001/api/products',
         everything: true,
         telescopes: false,
         sextants: false,
