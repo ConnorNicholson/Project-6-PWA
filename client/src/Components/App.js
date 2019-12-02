@@ -15,9 +15,9 @@ class App extends React.Component {
     super(props)
     this.state = {
       // Temporary fix for Heroku:
-      // fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
+      fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
       // Temporary fix for local:
-      fetchEndpoint: 'http://localhost:3001/api/products',
+      // fetchEndpoint: 'http://localhost:3001/api/products',
       allProducts: [],
       everything: true,
       telescopes: false,
@@ -64,9 +64,9 @@ class App extends React.Component {
   viewEverything = () => {
     this.setState({
         // Temporary fix for Heroku:
-        // fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
+        fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
         // Temporary fix for local:
-        fetchEndpoint: 'http://localhost:3001/api/products',
+        // fetchEndpoint: 'http://localhost:3001/api/products',
         everything: true,
         telescopes: false,
         sextants: false,
