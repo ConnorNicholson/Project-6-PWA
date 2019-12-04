@@ -29,6 +29,7 @@ To download the required node_modules, enter this command in your Terminal:
     ```
 
 ## Additional Notes:
+In order to access the `Products` page, the user must either signup or login. All login usernames and emails are kept on Mongo Atlas, and passwords are encrypted with SHA-256.
 
 In the package.json file in the root directory, there are custom scripts that allow the developer to start both the Express server and the React App at the same time. To execute this script, open Terminal and run this line:
     ```
