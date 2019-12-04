@@ -2,6 +2,9 @@
 This repo is for Phase 6 of my eCommerce Website, AstroTech.
 AstroTech is dedicated to carrying top of the line astronomical equipment.
 
+## This Application is Live on Heroku!
+https://react-proj6-pwa.herokuapp.com/
+
 ## Currently in this repo:
 1. This README.md
 1. LICENSE
