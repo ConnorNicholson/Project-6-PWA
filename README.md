@@ -34,19 +34,19 @@ In the package.json file in the root directory, there are custom scripts that al
 ## Screenshots of Working Mobile Application:
 
 1. Icon for Mobile App
-![Mobile Application Icon](/screenshots/MobileApplicationIcon.png)
+<img src="/screenshots/MobileApplicationIcon.png" width="400">
 
-1. Mobile Home Page
-![Mobile Home Page](/screenshots/MobileHomePage.png)
+2. Mobile Home Page
+<img src="/screenshots/MobileHomePage.png" width="400">
 
-1. Mobile Signup Page
-![Mobile Signup Page](/screenshots/MobileSignupPage.png)
+3. Mobile Signup Page
+<img src="/screenshots/MobileSignupPage.png" width="400">
 
-1. Mobile Login Page
-![Mobile Login Page](/screenshots/MobileLoginPage.png)
+4. Mobile Login Page
+<img src="/screenshots/MobileLoginPage.png" width="400">
 
-1. Mobile Products Page
-![Mobile Products Page](/screenshots/MobileProductsPage.png)
+5. Mobile Products Page
+<img src="/screenshots/MobileProductsPage.png" width="400">
 
-1. Mobile Contact Page
-![Mobile Contact Page](/screenshots/MobileContactPage.png)
+6. Mobile Contact Page
+<img src="/screenshots/MobileContactPage.png" width="400">
