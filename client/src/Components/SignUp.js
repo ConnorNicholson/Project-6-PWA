@@ -30,27 +30,20 @@ class SignUp extends React.Component {
 	render() {
 		const { name, email, password } = this.state.fields
 		return (
-			<div className='SignUp'>
-				<div className='row'>
-					<div className='column column-33 column-offset-33'>
-						<h1>Sign Up</h1>
-						<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
-							<input 
-							type="text" placeholder="Name" name="name" 
-							defaultValue={name} 
-							/>
-							<input 
-							type="text" placeholder="Email" name="email" 
-							defaultValue={email} 
-							/>
-							<input 
-							type="password" placeholder="Password" name="password" 
-							defaultValue={password} 
-							/>
-							<button>Sign Up</button>
-						</form>
+			<div>
+				<header className='signup-container'>
+					<div className='container'>
+						<div className='col-md-8 mx-auto'>
+							<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
+								<h1 className="signup-intro">Sign Up:</h1>
+								<input className="form-elements" type="text" placeholder="Name" name="name" defaultValue={name} />
+								<input className="form-elements" type="text" placeholder="Email" name="email" defaultValue={email} />
+								<input className="form-elements" type="password" placeholder="Password" name="password" defaultValue={password} />
+								<button className="form-elements signup-submit">Sign Up</button>
+							</form>
+						</div>
 					</div>
-				</div>
+				</header>
 			</div>
 		)
 	}

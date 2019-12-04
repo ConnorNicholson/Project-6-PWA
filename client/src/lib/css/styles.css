@@ -67,7 +67,7 @@ html,body {
     }
 @media only screen 
     and (min-device-width: 950px) 
-    and (max-device-width: 1280px)  {
+    and (max-device-width: 2000px)  {
         .navbar {
             font-size: 20px;
         }
@@ -113,6 +113,12 @@ html,body {
         }
         .contact-intro {
             font-size: 70px;
+        }
+        .login-intro {
+            padding: 150px 30px 30px;
+        }
+        .signup-intro {
+            padding: 150px 30px 30px;
         }
 }
 @media only screen 
@@ -166,6 +172,12 @@ html,body {
         }
         .contact-intro {
             font-size: 70px;
+        }
+        .login-intro {
+            padding: 150px 30px 30px;
+        }
+        .signup-intro {
+            padding: 150px 30px 30px;
         }
     }
 @media only screen 
@@ -223,6 +235,12 @@ html,body {
         }
         .navbar {
             font-size: 15px;
+        }
+        .login-intro {
+            padding: 100px 30px 30px;
+        }
+        .signup-intro {
+            padding: 100px 30px 30px;
         }
     }
 
@@ -557,7 +575,6 @@ label {
     border-bottom: solid #ccbdbd81 1px;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -573,4 +590,64 @@ footer a {
 footer a:hover {
     color: #25339c;
     text-decoration: none;
+}
+
+/* Login */
+
+.login-container {
+    text-align: center;
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564335069/Assets%20ECommerce/contact_page_background_ehtap2.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+}
+
+.login-intro {
+    text-align: center;
+    font-size: 50px;
+}
+
+.login-submit:hover {
+    background-color: #d21313;
+}
+
+.login-submit:active {
+    outline: none;
+}
+
+.login-submit:not(:active) {
+    outline: none;
+}
+
+/* Signup */
+
+.signup-container {
+    text-align: center;
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564335069/Assets%20ECommerce/contact_page_background_ehtap2.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+}
+
+.signup-intro {
+    text-align: center;
+    font-size: 50px;
+}
+
+.signup-submit:hover {
+    background-color: #d21313;
+}
+
+.signup-submit:active {
+    outline: none;
+}
+
+.signup-submit:not(:active) {
+    outline: none;
 }
