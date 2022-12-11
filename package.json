@@ -10,7 +10,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "eslint-utils": ">=1.4.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "file-system": "^2.2.2",
     "helmet": "^3.21.1",
     "http-proxy-middleware": "^0.20.0",
